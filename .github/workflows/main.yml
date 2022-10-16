@@ -1,12 +1,4 @@
-steps:
-    - name: Check out Repository
-      uses: actions/checkout@v3
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        java-version: 17
-
-    - name: Packaging Jar
-      id: packaging-jar
-      shell: bash
-      run: mvn clean install
+ name: Build with Maven
+   run: mvn clean
+ - name: instll with Maven
+   run: mvn install
