@@ -41,14 +41,11 @@ jobs:
   export:
 
     runs-on: ubuntu-latest
-
-  steps:
+    steps:
     - name: Export Fortify vulnerability data
   # You may pin to the exact commit or the version.
   # uses: fortify/gha-export-vulnerabilities@aa32484fd4a17f6df80e92ef6cc68b61ab7f5a92
       uses: fortify/gha-export-vulnerabilities@v1.0.0
-      with:
-    # SSC Base URL (e.g. https://my.ssc.host/ssc)
    
       env:
        GITHUB-TOKEN: ${{ secrets.GITHUB_TOKEN }}
